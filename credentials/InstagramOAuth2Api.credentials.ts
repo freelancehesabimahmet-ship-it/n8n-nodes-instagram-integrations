@@ -170,13 +170,14 @@ export class InstagramOAuth2Api implements ICredentialType {
 	 * Test the credentials to ensure they work
 	 */
 	test: ICredentialTestRequest = {
-		request: {
-			baseURL: 'https://graph.instagram.com/v23.0',
-			url: '/me',
-			method: 'GET',
-			qs: {
-				fields: 'id,username',
-			},
+	request: {
+		baseURL: 'https://graph.facebook.com/v20.0',
+		url: '/me',
+		method: 'GET',
+		qs: {
+			fields: 'id,name',
 		},
-	};
+	},
+};
+
 }
